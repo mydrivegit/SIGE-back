@@ -1,0 +1,37 @@
+{
+  "name": "sige",
+  "version": "1.0.0",
+  "description": "Back-End Express app for SIGE vueJs project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "seeder": "node seeder/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "EXPRESS",
+    "NODEJS",
+    "MONGOOSE",
+    "MONGODB"
+  ],
+  "author": "SHAIK ALAUDDEEN Alihasana",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "dotenv": "^5.0.1",
+    "morgan": "^1.9.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "hogan.js": "^3.0.2",
+    "jsonwebtoken": "^8.2.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.1",
+    "mongoose": "^5.0.17",
+    "nodemailer": "^4.6.4"
+  }
+}
