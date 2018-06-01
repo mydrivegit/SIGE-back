@@ -23,7 +23,7 @@ let UserSchema = new mongoose.Schema({
     unique: true
   },
   mobileNo: {
-    type: Number
+    type: String
   },
   status: {
     type: Boolean,
