@@ -5,11 +5,11 @@ import dotEnv from 'dotenv'
 dotEnv.config()
 
 mongoose.Promise = global.Promise
-mongoose.connect('mongodb://localhost:' + process.env.MONGOSERVERPORT + '/sige', {}, (err) => {
+mongoose.connect(process.env.MONGODB_URL, {}, (err) => {
   if (err) {
     throw err
   } else {
-    console.log('Mongodb connected on port:' + process.env.MONGOSERVERPORT)
+    console.log('connected with Mlab')
     let user = new User({
       username: 'admin',
       password: bcrypt.hashSync('admin', 10),
